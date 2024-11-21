@@ -1,0 +1,41 @@
+package org.QuarkusProjectReactive.enums.filter;
+
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+public enum OrderStatus {
+    READY_TO_SHIP("READY_TO_SHIP"),
+    SHIPPED("SHIPPED"),
+    DELIVERED("DELIVERED"),
+    UNHOLD("UNHOLD"),
+    HOLD("HOLD"),
+    CANCEL("CANCEL"),
+    RETURN_INITIATED("RETURN_INITIATED"),
+    CUSTOMER_DENIED("CUSTOMER_DENIED"),
+    CRM_PENDING("CRM_PENDING"),
+    CONFIRM("CONFIRM"),
+    CRM_ASSIGNED("CRM_ASSIGNED"),
+    WAREHOUSE_PROCESSED("WAREHOUSE_PROCESSED"),
+    PACKED("PACKED"),
+    PRECONFIRM("PRECONFIRM"),
+    PREHOLD("PREHOLD"),
+    MANIFESTED("MANIFESTED"),
+    SHELVED("SHELVED"),
+    OUT_FOR_DELIVERY("OUT_FOR_DELIVERY"),
+    HOLD_BY_DRIVER("HOLD_BY_DRIVER"),
+    PRE_PACK("PRE_PACK"),
+    SCHEDULED("SCHEDULED"),
+    SCHEDULE_REQUEST("SCHEDULE_REQUEST"),
+    RE_SHELVED("RE_SHELVED"),
+    RETURN_REJECT("RETURN_REJECT"),
+    RECEIVED("RECEIVED"),
+    REDEEMED("REDEEMED"),
+    PICKED_UP_BY_COURIER("PICKED_UP_BY_COURIER");
+
+
+    String value;
+
+    OrderStatus(String value){
+        this.value = value;
+    }
+}
